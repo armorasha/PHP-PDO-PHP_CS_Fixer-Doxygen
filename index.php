@@ -1,4 +1,4 @@
 <?php
- echo "Hi"
+ echo "PDO and Parameterized query exercise"
 
 ?>
