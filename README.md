@@ -18,7 +18,15 @@ Using PDO (Data Abstraction layer) in PHP to connect to different databases like
   - fetch in many ways including associative array object (main) but there are others.
   - you can also override & fetch array instead of object.
 
- ### Parameterized SQL queries
+ ## Parameterized SQL queries
+ A parameterized query (also known as a prepared statement) is a means of pre-compiling a SQL statement so that all you need to supply are the "parameters" (like "variables") that need to be inserted into the statement for it to be executed. It's commonly used as a means of preventing SQL injection attacks.
+
+#### Keywords and Notes
+- Prepared Statements can have
+  - positional params
+  - named params
+
+## Transactions
  A parameterized query (also known as a prepared statement) is a means of pre-compiling a SQL statement so that all you need to supply are the "parameters" (like "variables") that need to be inserted into the statement for it to be executed. It's commonly used as a means of preventing SQL injection attacks.
 
 #### Keywords and Notes
