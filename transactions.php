@@ -17,7 +17,9 @@ $pdo = new PDO($dsn, $user, $password);
 // first set of queries where all queries will succeed
 // commit success
 try {
-    // you need to set these attributes or else commit/rollback will not work properly.
+    // You need to set these attributes or else commit/rollback will not work properly.
+    // Although there are several error handling modes in PDO, the only proper one is PDO::ERRMODE_EXCEPTION. 
+    // This is all you need for the basic error reporting.
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $pdo->beginTransaction();
