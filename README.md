@@ -13,7 +13,7 @@ Start with running ```index.php``` with XAMPP's Apache, which contains links to 
 Using PDO (PHP Data Object, a Data Abstraction layer) in PHP to connect to different databases like MySQL, SQLite and MSSQL with no code change in the actual PHP project itself. The code change will happen only in PDO layer. Without PDO, change in database (MySQL->MSSQL) will result in change of all SQL queries in the PHP project.
 
 #### Keywords and Notes
-- PDO - PHP Data Object, a Data Abstraction layer.
+- PDO - PHP Data Object, a Data Abstraction layer. ```$pdo = new PDO($dsn, $user, $password);```
 - DSN - Data Source Name. DSN is the connection method to a database. ```$dsn = 'mysql:host=localhost;dbname=php_pdo';```
 - DAL - Data Abstraction Layer. There are many DALs including PHP's PDO and other third party DALs.
 - Prepared statement / Parameterized queries are used in PDO DAL.
