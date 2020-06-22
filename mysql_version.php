@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host=localhost;dbname=php_pdo';
+$dsn = 'mysql:host=localhost;dbname=php_pdo'; //DSN
 $user = 'root';
 $password = 'mysql';
 
