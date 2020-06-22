@@ -38,3 +38,9 @@ Using PDO (Data Abstraction layer) in PHP to connect to different databases like
 2. execute several queries in several databases
 3. commit, if all queries successful.
 4. rollback all queries, if any query failed.
+
+## 4. Get Metadata and Attributes
+You can also retrieving 
+- metadata of a query, like column count of result set. (Eg: '2' for country_name and population columns)
+- database connection attributes (Eg: Driver: mysql, Server version: 5.7.22-0ubuntu0.16.04.1, Autocommit mode: 1)
+- columns metadata of a result (Eg: Table name: countries, Column name: id, Column length: 20, Column flags: not_null primary_key)
