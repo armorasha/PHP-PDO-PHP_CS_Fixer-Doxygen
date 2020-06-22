@@ -15,7 +15,7 @@ Using PDO (PHP Data Object, a Data Abstraction layer) in PHP to connect to diffe
 #### Keywords and Notes
 - PDO - PHP Data Object, a Data Abstraction layer. ```$pdo = new PDO($dsn, $user, $password);```
 - DSN - Data Source Name. DSN is the connection method to a database. ```$dsn = 'mysql:host=localhost;dbname=php_pdo';```
-- DAL - Data Abstraction Layer. There are many DALs including PHP's PDO and other third party DALs.
+- DAL - Data Abstraction Layer. There are many DALs: PHP's PDO and also other third party DALs.
 - Prepared statement / Parameterized queries are used in PDO DAL.
 - fetch 
   - fetch in many ways including associative array object (main) but there are others.
