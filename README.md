@@ -1,3 +1,6 @@
+# CAUTION
+DO NOT MAKE THIS REPO PUBLIC. CONTAINS MYSQL SYSTEM ROOT PASSWORD. 
+
 # PDO Data Abstraction Layer in PHP
 Using PDO Data Abstraction layer in PHP to connect to different databases like MySQL, SQLite and MSSQL with no code change in the actual PHP project itself. The code change will happen only in PDO layer. Without PDO, change in database (MySQL->MSSQL) will result in change of all SQL queries in the PHP project.
 
