@@ -9,4 +9,5 @@ echo '<b>PDO and Parameterized query exercises</b><br><br>';
 <a href="/parameterized_query.php/">5. Parameterized Query + Prepared statement-1 using PDO</a><br>
 <a href="/parameterized_query2.php/">6. Parameterized Query + Prepared statement-2 using PDO</a><br>
 <a href="/last_inserted_row_id.php/">7. Finding last inserted row\'s id</a><br>
-<a href="/transaction.php/">8. If query succeeds, transactions commits all; else it rolls back.</a><br>
+<a href="/transactions.php/">8. If all queries succeed, transactions commits all; else it rolls back all.</a><br>
+<a href="/column_count.php/">9. Retrieving metadata of a query, like column count of result set.</a><br>

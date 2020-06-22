@@ -11,8 +11,8 @@ $pdo = new PDO($dsn, $user, $password);
 // The effects of all the SQL statements in a transaction can be either all committed to the database or all rolled back.
 
 // The PDO beginTransaction() initiates a new transaction.
-// The PDO commit() commits the transaction.
-// And the PDO rollback() rolls back the transaction.
+// The PDO commit() commits all transactions.
+// And the PDO rollback() rolls back all transactions, if any query fails.
 
 // first set of queries where all queries will succeed
 // commit success
