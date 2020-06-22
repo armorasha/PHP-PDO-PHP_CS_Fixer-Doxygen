@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host=localhost;dbname=pdo_php';
+$dsn = 'mysql:host=localhost;dbname=php_pdo';
 $user = 'root';
 $password = 'mysql';
 
@@ -10,4 +10,4 @@ $stm = $pdo->query('SELECT VERSION()');
 
 $version = $stm->fetch();
 
-echo $version[0] . PHP_EOL;
+echo 'MySQL version being used is ' . $version[0] . PHP_EOL;
