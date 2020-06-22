@@ -7,10 +7,10 @@ Using PDO Data Abstraction layer in PHP to connect to different databases like M
 ### Keywords and Notes
 - DSN - Data Source Name
 - DAL - Data Abstraction Layer.
--     - There are many DALs including PHP's PDO and other third party DALs.
+     - There are many DALs including PHP's PDO and other third party DALs.
 - Prepared statement / Parameterized queries are used in PDO DAL.
 - fetch - fetch in many ways including associative array object (main) but there are others.
--       - you can also override & fetch array instead of object.
+        - you can also override & fetch array instead of object.
 
  ## Parameterized SQL queries
  A parameterized query (also known as a prepared statement) is a means of pre-compiling a SQL statement so that all you need to supply are the "parameters" (like "variables") that need to be inserted into the statement for it to be executed. It's commonly used as a means of preventing SQL injection attacks.
