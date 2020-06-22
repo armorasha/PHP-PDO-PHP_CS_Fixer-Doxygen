@@ -34,8 +34,7 @@ Using PDO (Data Abstraction layer) in PHP to connect to different databases like
  Transactions will rollback even when sending queries to different DBs.
 
 #### Keywords and Notes
-- Transactions
-  1. begin transaction
-  2. execute several queries in several databases
-  3. commit, if all queries successful.
-  4. rollback all queries, if any query failed.
+1. begin transaction
+2. execute several queries in several databases
+3. commit, if all queries successful.
+4. rollback all queries, if any query failed.
