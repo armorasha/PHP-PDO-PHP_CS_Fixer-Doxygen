@@ -19,7 +19,7 @@ Using PDO (PHP Data Object, a Data Abstraction layer) in PHP to connect to diffe
 - Prepared statement / Parameterized queries are used in PDO DAL.
 - fetch 
   - fetch in many ways including associative array object (main) but there are others.
-  - you can also override & fetch array instead of object.
+  - you can also override and fetch array, instead of object.
 
  ## 2. Parameterized SQL queries
  Must use Parameterized SQL queries for PDO. See third paragraph to find out why.
