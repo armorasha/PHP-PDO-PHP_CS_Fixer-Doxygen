@@ -15,10 +15,11 @@ $stm = $pdo->query("SELECT * FROM countries");
 // ..and the PDO::FETCH_BOTH returns an array indexed by both column name and indexed column number.
 // The default fetch style is PDO::FETCH_BOTH.
 
-$rows = $stm->fetchAll(PDO::FETCH_NUM);
+$rows = $stm->fetchAll(PDO::FETCH_ASSOC); //fetching data as an associative array
 
 foreach ($rows as $row) {
-    printf("$row[0] $row[1] $row[2]"); //column numbers 0,1,2 used since FETCH_NUM was used
+
+    printf("{$row['id']} {$row['name']} {$row['population']}"); //column names 'id,name,population' used since FETCH_ASSOC was used
     echo '<br>';
 }
 

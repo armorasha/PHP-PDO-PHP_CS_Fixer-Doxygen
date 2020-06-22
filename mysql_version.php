@@ -15,7 +15,7 @@ $stm = $pdo->query('SELECT VERSION()');
 $version = $stm->fetch();
 
 //The $version is an array, we get its first value.
-echo 'MySQL version being used is ' . $version[0] . PHP_EOL;
+echo 'MySQL version being used is ' . $version[0] . '<br>';
 
 echo '<br><br>';
 echo '<a href="../index.php/"><-Back</a>';
