@@ -16,3 +16,6 @@ $version = $stm->fetch();
 
 //The $version is an array, we get its first value.
 echo 'MySQL version being used is ' . $version[0] . PHP_EOL;
+
+echo '<br><br>';
+echo '<a href="../index.php/"><-Back</a>';
