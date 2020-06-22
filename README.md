@@ -35,7 +35,7 @@ Using PDO (Data Abstraction layer) in PHP to connect to different databases like
 
 #### Keywords and Notes
 - Transactions
-  - begin transaction
-  - execute several queries in several databases
-  - commit, if all queries successful.
-  - rollback all queries, if any query failed.
+  1. begin transaction
+  2. execute several queries in several databases
+  3. commit, if all queries successful.
+  4. rollback all queries, if any query failed.
