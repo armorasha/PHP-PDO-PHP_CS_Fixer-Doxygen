@@ -10,10 +10,10 @@ PHP 7.4 does not support MySQL 8.x's ```caching_sha2_password``` user authentica
 Start with running ```index.php``` with XAMPP's Apache, which contains links to all the exercises. Use create_database.sql to create a database in MySQL Workbench for this exercise to connect to. Don't use phpMyAdmin. 
 
 ## 1. PDO 
-Using PDO (Data Abstraction layer) in PHP to connect to different databases like MySQL, SQLite and MSSQL with no code change in the actual PHP project itself. The code change will happen only in PDO layer. Without PDO, change in database (MySQL->MSSQL) will result in change of all SQL queries in the PHP project.
+Using PDO (PHP Data Object, a Data Abstraction layer) in PHP to connect to different databases like MySQL, SQLite and MSSQL with no code change in the actual PHP project itself. The code change will happen only in PDO layer. Without PDO, change in database (MySQL->MSSQL) will result in change of all SQL queries in the PHP project.
 
 #### Keywords and Notes
-- PDO - Data Abstraction layer.
+- PDO - PHP Data Object, a Data Abstraction layer.
 - DSN - Data Source Name. DSN is the connection method to a database.
 - DAL - Data Abstraction Layer. There are many DALs including PHP's PDO and other third party DALs.
 - Prepared statement / Parameterized queries are used in PDO DAL.
