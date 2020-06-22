@@ -1,7 +1,9 @@
-# CAUTION
+# PHP PDO
+
+## CAUTION
 > DO NOT MAKE THIS REPO PUBLIC. CONTAINS MYSQL SYSTEM ROOT PASSWORD and references to my own docx summaries which is useless to others.
 
-# MySQL 8.x's 'caching_sha2_password' authentication
+## MySQL 8.x's 'caching_sha2_password' authentication
 PHP 7.4 does not support MySQL 8.x's ```caching_sha2_password``` user authentication method/plugin yet. You need to change the access user's (that will be used in this PDO exercises) auth method/plugin to ```mysql_native_password``` in MySQL. I used ```root``` user and changed its auth method.
 
 # PDO Data Abstraction Layer in PHP
