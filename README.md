@@ -28,8 +28,8 @@ Using PDO (PHP Data Object, a Data Abstraction layer) in PHP to connect to diffe
 
 #### Keywords and Notes
 - Prepared Statements can have
-  - positional params
-  - named params
+  - positional params (0,1,2,..)
+  - named params (id, name, age,..)
 
 ## 3. Transactions
  A transaction is an atomic (wholesome) unit of database operations against the data in one or more databases. The results of all the SQL statements in a transaction can be either **all committed** to the database or **all rolled back**.
