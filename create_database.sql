@@ -20,6 +20,3 @@ INSERT INTO countries(name, population) VALUES('Russia', 146838000);
 INSERT INTO countries(name, population) VALUES('Japan', 126830000);
 
 SELECT * FROM countries;
-
-INSERT INTO countries(nam, pop) VALUES ('Uganda', 37673800);
-UPDATE countries SET name = 'Kuwait' WHERE id = 700;
