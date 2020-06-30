@@ -10,7 +10,7 @@ $pdo = new PDO($dsn, $user, $password);
 $id = 10;
 
 // 1. prepared statement is being declared. 'id=12' will be inserted here.
-$stm = $pdo->prepare("SELECT * FROM countries WHERE id = ?");
+$stm = $pdo->prepare('SELECT * FROM countries WHERE id = ?');
 
 // 2. prepared statement is being prepared.
 $stm->bindValue(1, $id);
@@ -20,9 +20,9 @@ $stm->execute();
 
 $row = $stm->fetch(PDO::FETCH_ASSOC); //fetching data as an associative array
 
-echo "Id: " . $row['id'] . '<br>';
-echo "Name: " . $row['name'] . '<br>';
-echo "Population: " . $row['population'] . '<br>';
+echo 'Id: ' . $row['id'] . '<br>';
+echo 'Name: ' . $row['name'] . '<br>';
+echo 'Population: ' . $row['population'] . '<br>';
 echo '<br>';
 
 echo '<br><br>';

@@ -17,38 +17,36 @@ $pdo = new PDO($dsn, $user, $password);
 // first set of queries where all queries will succeed
 // commit success
 try {
-    // You need to set these attributes or else commit/rollback will not work properly.
-    // Although there are several error handling modes in PDO, the only proper one is PDO::ERRMODE_EXCEPTION. 
-    // This is all you need for the basic error reporting.
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	// You need to set these attributes or else commit/rollback will not work properly.
+	// Although there are several error handling modes in PDO, the only proper one is PDO::ERRMODE_EXCEPTION.
+	// This is all you need for the basic error reporting.
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $pdo->beginTransaction();
-    $stm = $pdo->exec("INSERT INTO countries(name, population) VALUES ('Iraq', 38274000)");
-    $stm = $pdo->exec("INSERT INTO countries(name, population) VALUES ('Uganda', 37673800)");
+	$pdo->beginTransaction();
+	$stm = $pdo->exec("INSERT INTO countries(name, population) VALUES ('Iraq', 38274000)");
+	$stm = $pdo->exec("INSERT INTO countries(name, population) VALUES ('Uganda', 37673800)");
 
-    $pdo->commit();
-    echo 'First set of queries commit successful<br>';
+	$pdo->commit();
+	echo 'First set of queries commit successful<br>';
 } catch (Exception $e) {
-
-    $pdo->rollback();
-    echo 'First set of queries rolled back<br>';
-    throw $e;
+	$pdo->rollback();
+	echo 'First set of queries rolled back<br>';
+	throw $e;
 }
 
 // second set of queries where one query will fail and the other succeed
 // rollback
 try {
-    $pdo->beginTransaction();
-    $stm = $pdo->exec("INSERT INTO countries(name, population) VALUES ('Iraq3', 38274000)"); // insert success, but will be rolled back
-    $stm = $pdo->exec("INSERT INTO countries(nam, pop) VALUES ('Uganda3', 37673800)"); // insert fails, so this will roll back the above query too
+	$pdo->beginTransaction();
+	$stm = $pdo->exec("INSERT INTO countries(name, population) VALUES ('Iraq3', 38274000)"); // insert success, but will be rolled back
+	$stm = $pdo->exec("INSERT INTO countries(nam, pop) VALUES ('Uganda3', 37673800)"); // insert fails, so this will roll back the above query too
 
-    $pdo->commit();
-    echo 'Second set of queries commit successful<br>';
+	$pdo->commit();
+	echo 'Second set of queries commit successful<br>';
 } catch (Exception $e) {
-
-    $pdo->rollback();
-    echo 'Second set of queries rolled back<br>';
-    throw $e;
+	$pdo->rollback();
+	echo 'Second set of queries rolled back<br>';
+	throw $e;
 }
 
 echo '<br><br>';
