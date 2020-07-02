@@ -1,4 +1,4 @@
-# PHP PDO: Data Abstraction Layer in PHP
+# PHP PDO: Data Abstraction Layer in PHP + Linting + Code Documentation
 
 ### R_CAUTION
 > DO NOT MAKE THIS REPO PUBLIC. CONTAINS MYSQL SYSTEM ROOT PASSWORD and references to my own docx summaries which is useless to others.
@@ -47,3 +47,13 @@ Using PDO, You can also retrieve
 - metadata of a query, like column count of result set. (Eg: '2' for country_name and population columns)
 - database connection attributes (Eg: Driver: mysql, Server version: 5.7.22-0ubuntu0.16.04.1, Autocommit mode: 1)
 - columns metadata of a result (Eg: Table name: countries, Column name: id, Column length: 20, Column flags: not_null primary_key)
+
+# Linting & Block Commenting like JavaDoc for Code Documentation
+Using PHP-CS-Fixer for linting PHP code and using Block Commenting PHP in VS Code like JavaDoc in NetBeans
+
+## Automatic Linting-on-save using PHP-CS-Fixer
+Use [my Medium blog post](https://medium.com/@armorasha/php-cs-fixer-how-to-install-vs-code-2020-windows-10-75b6d5ed03ce) for how to install and use PHP-CS-Fixer in VS Code. This linter lints the code automatically everytime on-save, so you need not lint the code manually.
+
+## Block Commenting like JavaDoc for Code Documentation
+Use PHP DocBlocker extension for auto-fill commenting as in 1_Block_Commenting.php file in this repo. You cannot generate a HTML file as a Document from the block comments within VS Code. You need to use third party software like Doxygen to generate HTML document, I used this [GUI based Windows Doxygen tool](https://www.doxygen.nl/download.html) to generate HTML documentation for my code.
+
