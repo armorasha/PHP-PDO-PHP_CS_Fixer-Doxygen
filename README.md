@@ -63,7 +63,7 @@ Using PDO, You can also retrieve
 Use [my Medium blog post](https://medium.com/@armorasha/php-cs-fixer-how-to-install-vs-code-2020-windows-10-75b6d5ed03ce) for how to install and use **PHP-CS-Fixer** in VS Code. This linter ***lints code automatically*** everytime on-save, so you need not lint the code manually.
 
 ## 2. Block Commenting and Code HTML Documentation (like JavaDoc for Java)
-### **Block Commenting:
+### Block Commenting:
 Used **PHP DocBlocker extension** for auto-fill commenting as in 1_Block_Commenting.php file in this repo. 
 
 ```
@@ -84,7 +84,7 @@ Used **PHP DocBlocker extension** for auto-fill commenting as in 1_Block_Comment
 echo addTwoNum(1, 2);
  ```
 
-### **Code Documentation:** 
+### Code Documentation:
 Used third party software like **Doxygen** to generate HTML document, I used this [GUI based Windows Doxygen tool](https://www.doxygen.nl/download.html) to generate HTML documentation for my code. ***You cannot generate a HTML Code Documentation file from the block comments within VS Code***.
 
 #### Screenshots
