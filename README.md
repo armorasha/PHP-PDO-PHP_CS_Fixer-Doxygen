@@ -75,6 +75,12 @@ Use [my Medium blog post](https://medium.com/@armorasha/php-cs-fixer-how-to-inst
  * @param integer $b
  * @return void
  */
+ function addTwoNum(int $a, int $b)
+{
+	return $a + $b;
+}
+
+echo addTwoNum(1, 2);
  ```
 
 2. **Code Documentation:** Used third party software like **Doxygen** to generate HTML document, I used this [GUI based Windows Doxygen tool](https://www.doxygen.nl/download.html) to generate HTML documentation for my code. ***You cannot generate a HTML Code Documentation file from the block comments within VS Code***.
