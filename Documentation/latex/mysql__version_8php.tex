@@ -1,0 +1,56 @@
+\hypertarget{mysql__version_8php}{}\doxysection{mysql\+\_\+version.\+php File Reference}
+\label{mysql__version_8php}\index{mysql\_version.php@{mysql\_version.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mysql__version_8php_a6441cca8c9fa11e16d2017e8cb733c10}{\$dsn}} = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{}
+\item 
+\mbox{\hyperlink{mysql__version_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}root\textquotesingle{}
+\item 
+\mbox{\hyperlink{mysql__version_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}mysql\textquotesingle{}
+\item 
+\mbox{\hyperlink{mysql__version_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = new P\+DO(\$dsn, \$user, \$password)
+\item 
+\mbox{\hyperlink{mysql__version_8php_a29524b8dff52def18f5e0788b2b8131a}{\$stm}} = \$pdo-\/$>$query(\textquotesingle{}S\+E\+L\+E\+CT V\+E\+R\+S\+I\+ON()\textquotesingle{})
+\item 
+\mbox{\hyperlink{mysql__version_8php_a17c8948c68aa44fa9961ae169b6a8961}{\$version}} = \$stm-\/$>$fetch()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{mysql__version_8php_a6441cca8c9fa11e16d2017e8cb733c10}\label{mysql__version_8php_a6441cca8c9fa11e16d2017e8cb733c10}} 
+\index{mysql\_version.php@{mysql\_version.php}!\$dsn@{\$dsn}}
+\index{\$dsn@{\$dsn}!mysql\_version.php@{mysql\_version.php}}
+\doxysubsubsection{\texorpdfstring{\$dsn}{$dsn}}
+{\footnotesize\ttfamily \$dsn = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{}}
+
+\mbox{\Hypertarget{mysql__version_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{mysql__version_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}} 
+\index{mysql\_version.php@{mysql\_version.php}!\$password@{\$password}}
+\index{\$password@{\$password}!mysql\_version.php@{mysql\_version.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}mysql\textquotesingle{}}
+
+\mbox{\Hypertarget{mysql__version_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{mysql__version_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{mysql\_version.php@{mysql\_version.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!mysql\_version.php@{mysql\_version.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = new P\+DO(\$dsn, \$user, \$password)}
+
+\mbox{\Hypertarget{mysql__version_8php_a29524b8dff52def18f5e0788b2b8131a}\label{mysql__version_8php_a29524b8dff52def18f5e0788b2b8131a}} 
+\index{mysql\_version.php@{mysql\_version.php}!\$stm@{\$stm}}
+\index{\$stm@{\$stm}!mysql\_version.php@{mysql\_version.php}}
+\doxysubsubsection{\texorpdfstring{\$stm}{$stm}}
+{\footnotesize\ttfamily \$stm = \$pdo-\/$>$query(\textquotesingle{}S\+E\+L\+E\+CT V\+E\+R\+S\+I\+ON()\textquotesingle{})}
+
+\mbox{\Hypertarget{mysql__version_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{mysql__version_8php_a598ca4e71b15a1313ec95f0df1027ca5}} 
+\index{mysql\_version.php@{mysql\_version.php}!\$user@{\$user}}
+\index{\$user@{\$user}!mysql\_version.php@{mysql\_version.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}root\textquotesingle{}}
+
+\mbox{\Hypertarget{mysql__version_8php_a17c8948c68aa44fa9961ae169b6a8961}\label{mysql__version_8php_a17c8948c68aa44fa9961ae169b6a8961}} 
+\index{mysql\_version.php@{mysql\_version.php}!\$version@{\$version}}
+\index{\$version@{\$version}!mysql\_version.php@{mysql\_version.php}}
+\doxysubsubsection{\texorpdfstring{\$version}{$version}}
+{\footnotesize\ttfamily \$version = \$stm-\/$>$fetch()}
+

@@ -1,0 +1,64 @@
+\hypertarget{parameterized__query2_8php}{}\doxysection{parameterized\+\_\+query2.\+php File Reference}
+\label{parameterized__query2_8php}\index{parameterized\_query2.php@{parameterized\_query2.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{parameterized__query2_8php_a6441cca8c9fa11e16d2017e8cb733c10}{\$dsn}} = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{}
+\item 
+\mbox{\hyperlink{parameterized__query2_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}root\textquotesingle{}
+\item 
+\mbox{\hyperlink{parameterized__query2_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}mysql\textquotesingle{}
+\item 
+\mbox{\hyperlink{parameterized__query2_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = new P\+DO(\$dsn, \$user, \$password)
+\item 
+\mbox{\hyperlink{parameterized__query2_8php_ae97941710d863131c700f069b109991e}{\$id}} = 9
+\item 
+\mbox{\hyperlink{parameterized__query2_8php_a29524b8dff52def18f5e0788b2b8131a}{\$stm}} = \$pdo-\/$>$prepare(\textquotesingle{}S\+E\+L\+E\+CT $\ast$ F\+R\+OM countries W\+H\+E\+RE id = \+:id\textquotesingle{})
+\item 
+\mbox{\hyperlink{parameterized__query2_8php_aa1d731aa570613e5bcff831bb10e9b87}{\$row}} = \$stm-\/$>$fetch(P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+A\+S\+S\+OC)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{parameterized__query2_8php_a6441cca8c9fa11e16d2017e8cb733c10}\label{parameterized__query2_8php_a6441cca8c9fa11e16d2017e8cb733c10}} 
+\index{parameterized\_query2.php@{parameterized\_query2.php}!\$dsn@{\$dsn}}
+\index{\$dsn@{\$dsn}!parameterized\_query2.php@{parameterized\_query2.php}}
+\doxysubsubsection{\texorpdfstring{\$dsn}{$dsn}}
+{\footnotesize\ttfamily \$dsn = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{}}
+
+\mbox{\Hypertarget{parameterized__query2_8php_ae97941710d863131c700f069b109991e}\label{parameterized__query2_8php_ae97941710d863131c700f069b109991e}} 
+\index{parameterized\_query2.php@{parameterized\_query2.php}!\$id@{\$id}}
+\index{\$id@{\$id}!parameterized\_query2.php@{parameterized\_query2.php}}
+\doxysubsubsection{\texorpdfstring{\$id}{$id}}
+{\footnotesize\ttfamily \$id = 9}
+
+\mbox{\Hypertarget{parameterized__query2_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{parameterized__query2_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}} 
+\index{parameterized\_query2.php@{parameterized\_query2.php}!\$password@{\$password}}
+\index{\$password@{\$password}!parameterized\_query2.php@{parameterized\_query2.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}mysql\textquotesingle{}}
+
+\mbox{\Hypertarget{parameterized__query2_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{parameterized__query2_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{parameterized\_query2.php@{parameterized\_query2.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!parameterized\_query2.php@{parameterized\_query2.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = new P\+DO(\$dsn, \$user, \$password)}
+
+\mbox{\Hypertarget{parameterized__query2_8php_aa1d731aa570613e5bcff831bb10e9b87}\label{parameterized__query2_8php_aa1d731aa570613e5bcff831bb10e9b87}} 
+\index{parameterized\_query2.php@{parameterized\_query2.php}!\$row@{\$row}}
+\index{\$row@{\$row}!parameterized\_query2.php@{parameterized\_query2.php}}
+\doxysubsubsection{\texorpdfstring{\$row}{$row}}
+{\footnotesize\ttfamily \$row = \$stm-\/$>$fetch(P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+A\+S\+S\+OC)}
+
+\mbox{\Hypertarget{parameterized__query2_8php_a29524b8dff52def18f5e0788b2b8131a}\label{parameterized__query2_8php_a29524b8dff52def18f5e0788b2b8131a}} 
+\index{parameterized\_query2.php@{parameterized\_query2.php}!\$stm@{\$stm}}
+\index{\$stm@{\$stm}!parameterized\_query2.php@{parameterized\_query2.php}}
+\doxysubsubsection{\texorpdfstring{\$stm}{$stm}}
+{\footnotesize\ttfamily \$stm = \$pdo-\/$>$prepare(\textquotesingle{}S\+E\+L\+E\+CT $\ast$ F\+R\+OM countries W\+H\+E\+RE id = \+:id\textquotesingle{})}
+
+\mbox{\Hypertarget{parameterized__query2_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{parameterized__query2_8php_a598ca4e71b15a1313ec95f0df1027ca5}} 
+\index{parameterized\_query2.php@{parameterized\_query2.php}!\$user@{\$user}}
+\index{\$user@{\$user}!parameterized\_query2.php@{parameterized\_query2.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}root\textquotesingle{}}
+

@@ -1,0 +1,64 @@
+\hypertarget{fetch__style__num_8php}{}\doxysection{fetch\+\_\+style\+\_\+num.\+php File Reference}
+\label{fetch__style__num_8php}\index{fetch\_style\_num.php@{fetch\_style\_num.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{fetch__style__num_8php_a6441cca8c9fa11e16d2017e8cb733c10}{\$dsn}} = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{}
+\item 
+\mbox{\hyperlink{fetch__style__num_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}root\textquotesingle{}
+\item 
+\mbox{\hyperlink{fetch__style__num_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}mysql\textquotesingle{}
+\item 
+\mbox{\hyperlink{fetch__style__num_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = new P\+DO(\$dsn, \$user, \$password)
+\item 
+\mbox{\hyperlink{fetch__style__num_8php_a29524b8dff52def18f5e0788b2b8131a}{\$stm}} = \$pdo-\/$>$query(\textquotesingle{}S\+E\+L\+E\+CT $\ast$ F\+R\+OM countries\textquotesingle{})
+\item 
+\mbox{\hyperlink{fetch__style__num_8php_ace2ec39e7df3899fa8df9640ec274b03}{\$rows}} = \$stm-\/$>$fetch\+All(P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+N\+UM)
+\item 
+\mbox{\hyperlink{fetch__style__num_8php_a7058d3686dd2787493804eea246a9838}{foreach}} ( \$rows as \$row)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{fetch__style__num_8php_a6441cca8c9fa11e16d2017e8cb733c10}\label{fetch__style__num_8php_a6441cca8c9fa11e16d2017e8cb733c10}} 
+\index{fetch\_style\_num.php@{fetch\_style\_num.php}!\$dsn@{\$dsn}}
+\index{\$dsn@{\$dsn}!fetch\_style\_num.php@{fetch\_style\_num.php}}
+\doxysubsubsection{\texorpdfstring{\$dsn}{$dsn}}
+{\footnotesize\ttfamily \$dsn = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{}}
+
+\mbox{\Hypertarget{fetch__style__num_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{fetch__style__num_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}} 
+\index{fetch\_style\_num.php@{fetch\_style\_num.php}!\$password@{\$password}}
+\index{\$password@{\$password}!fetch\_style\_num.php@{fetch\_style\_num.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}mysql\textquotesingle{}}
+
+\mbox{\Hypertarget{fetch__style__num_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{fetch__style__num_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{fetch\_style\_num.php@{fetch\_style\_num.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!fetch\_style\_num.php@{fetch\_style\_num.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = new P\+DO(\$dsn, \$user, \$password)}
+
+\mbox{\Hypertarget{fetch__style__num_8php_ace2ec39e7df3899fa8df9640ec274b03}\label{fetch__style__num_8php_ace2ec39e7df3899fa8df9640ec274b03}} 
+\index{fetch\_style\_num.php@{fetch\_style\_num.php}!\$rows@{\$rows}}
+\index{\$rows@{\$rows}!fetch\_style\_num.php@{fetch\_style\_num.php}}
+\doxysubsubsection{\texorpdfstring{\$rows}{$rows}}
+{\footnotesize\ttfamily \$rows = \$stm-\/$>$fetch\+All(P\+D\+O\+::\+F\+E\+T\+C\+H\+\_\+\+N\+UM)}
+
+\mbox{\Hypertarget{fetch__style__num_8php_a29524b8dff52def18f5e0788b2b8131a}\label{fetch__style__num_8php_a29524b8dff52def18f5e0788b2b8131a}} 
+\index{fetch\_style\_num.php@{fetch\_style\_num.php}!\$stm@{\$stm}}
+\index{\$stm@{\$stm}!fetch\_style\_num.php@{fetch\_style\_num.php}}
+\doxysubsubsection{\texorpdfstring{\$stm}{$stm}}
+{\footnotesize\ttfamily \$stm = \$pdo-\/$>$query(\textquotesingle{}S\+E\+L\+E\+CT $\ast$ F\+R\+OM countries\textquotesingle{})}
+
+\mbox{\Hypertarget{fetch__style__num_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{fetch__style__num_8php_a598ca4e71b15a1313ec95f0df1027ca5}} 
+\index{fetch\_style\_num.php@{fetch\_style\_num.php}!\$user@{\$user}}
+\index{\$user@{\$user}!fetch\_style\_num.php@{fetch\_style\_num.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}root\textquotesingle{}}
+
+\mbox{\Hypertarget{fetch__style__num_8php_a7058d3686dd2787493804eea246a9838}\label{fetch__style__num_8php_a7058d3686dd2787493804eea246a9838}} 
+\index{fetch\_style\_num.php@{fetch\_style\_num.php}!foreach@{foreach}}
+\index{foreach@{foreach}!fetch\_style\_num.php@{fetch\_style\_num.php}}
+\doxysubsubsection{\texorpdfstring{foreach}{foreach}}
+{\footnotesize\ttfamily foreach(\$rows as \$row)}
+

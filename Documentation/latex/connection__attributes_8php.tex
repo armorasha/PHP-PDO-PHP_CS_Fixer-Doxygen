@@ -1,0 +1,72 @@
+\hypertarget{connection__attributes_8php}{}\doxysection{connection\+\_\+attributes.\+php File Reference}
+\label{connection__attributes_8php}\index{connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{connection__attributes_8php_a6441cca8c9fa11e16d2017e8cb733c10}{\$dsn}} = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{}
+\item 
+\mbox{\hyperlink{connection__attributes_8php_a598ca4e71b15a1313ec95f0df1027ca5}{\$user}} = \textquotesingle{}root\textquotesingle{}
+\item 
+\mbox{\hyperlink{connection__attributes_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}{\$password}} = \textquotesingle{}mysql\textquotesingle{}
+\item 
+\mbox{\hyperlink{connection__attributes_8php_a5766efd703cef0e00bfc06b3f3acbe0e}{\$pdo}} = new P\+DO(\$dsn, \$user, \$password)
+\item 
+\mbox{\hyperlink{connection__attributes_8php_a29524b8dff52def18f5e0788b2b8131a}{\$stm}} = \$pdo-\/$>$query(\textquotesingle{}S\+E\+L\+E\+CT name, population F\+R\+OM countries W\+H\+E\+RE id=1\textquotesingle{})
+\item 
+\mbox{\hyperlink{connection__attributes_8php_a142c9a24d4f80b32faeb93ca6e77f5e3}{\$driver}} = \$pdo-\/$>$get\+Attribute(P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+N\+A\+ME)
+\item 
+\mbox{\hyperlink{connection__attributes_8php_ace64fd7d0682eb6477dd791bbf48121f}{\$server\+\_\+version}} = \$pdo-\/$>$get\+Attribute(P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+V\+E\+R\+S\+I\+ON)
+\item 
+\mbox{\hyperlink{connection__attributes_8php_a9a24baa4748d6d51b3022bdeb62126cc}{\$autocommit\+\_\+mode}} = \$pdo-\/$>$get\+Attribute(P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{connection__attributes_8php_a9a24baa4748d6d51b3022bdeb62126cc}\label{connection__attributes_8php_a9a24baa4748d6d51b3022bdeb62126cc}} 
+\index{connection\_attributes.php@{connection\_attributes.php}!\$autocommit\_mode@{\$autocommit\_mode}}
+\index{\$autocommit\_mode@{\$autocommit\_mode}!connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsubsection{\texorpdfstring{\$autocommit\_mode}{$autocommit\_mode}}
+{\footnotesize\ttfamily \$autocommit\+\_\+mode = \$pdo-\/$>$get\+Attribute(P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+A\+U\+T\+O\+C\+O\+M\+M\+IT)}
+
+\mbox{\Hypertarget{connection__attributes_8php_a142c9a24d4f80b32faeb93ca6e77f5e3}\label{connection__attributes_8php_a142c9a24d4f80b32faeb93ca6e77f5e3}} 
+\index{connection\_attributes.php@{connection\_attributes.php}!\$driver@{\$driver}}
+\index{\$driver@{\$driver}!connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsubsection{\texorpdfstring{\$driver}{$driver}}
+{\footnotesize\ttfamily \$driver = \$pdo-\/$>$get\+Attribute(P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+D\+R\+I\+V\+E\+R\+\_\+\+N\+A\+ME)}
+
+\mbox{\Hypertarget{connection__attributes_8php_a6441cca8c9fa11e16d2017e8cb733c10}\label{connection__attributes_8php_a6441cca8c9fa11e16d2017e8cb733c10}} 
+\index{connection\_attributes.php@{connection\_attributes.php}!\$dsn@{\$dsn}}
+\index{\$dsn@{\$dsn}!connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsubsection{\texorpdfstring{\$dsn}{$dsn}}
+{\footnotesize\ttfamily \$dsn = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{}}
+
+\mbox{\Hypertarget{connection__attributes_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}\label{connection__attributes_8php_a607686ef9f99ea7c42f4f3dd3dbb2b0d}} 
+\index{connection\_attributes.php@{connection\_attributes.php}!\$password@{\$password}}
+\index{\$password@{\$password}!connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsubsection{\texorpdfstring{\$password}{$password}}
+{\footnotesize\ttfamily \$password = \textquotesingle{}mysql\textquotesingle{}}
+
+\mbox{\Hypertarget{connection__attributes_8php_a5766efd703cef0e00bfc06b3f3acbe0e}\label{connection__attributes_8php_a5766efd703cef0e00bfc06b3f3acbe0e}} 
+\index{connection\_attributes.php@{connection\_attributes.php}!\$pdo@{\$pdo}}
+\index{\$pdo@{\$pdo}!connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsubsection{\texorpdfstring{\$pdo}{$pdo}}
+{\footnotesize\ttfamily \$pdo = new P\+DO(\$dsn, \$user, \$password)}
+
+\mbox{\Hypertarget{connection__attributes_8php_ace64fd7d0682eb6477dd791bbf48121f}\label{connection__attributes_8php_ace64fd7d0682eb6477dd791bbf48121f}} 
+\index{connection\_attributes.php@{connection\_attributes.php}!\$server\_version@{\$server\_version}}
+\index{\$server\_version@{\$server\_version}!connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsubsection{\texorpdfstring{\$server\_version}{$server\_version}}
+{\footnotesize\ttfamily \$server\+\_\+version = \$pdo-\/$>$get\+Attribute(P\+D\+O\+::\+A\+T\+T\+R\+\_\+\+S\+E\+R\+V\+E\+R\+\_\+\+V\+E\+R\+S\+I\+ON)}
+
+\mbox{\Hypertarget{connection__attributes_8php_a29524b8dff52def18f5e0788b2b8131a}\label{connection__attributes_8php_a29524b8dff52def18f5e0788b2b8131a}} 
+\index{connection\_attributes.php@{connection\_attributes.php}!\$stm@{\$stm}}
+\index{\$stm@{\$stm}!connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsubsection{\texorpdfstring{\$stm}{$stm}}
+{\footnotesize\ttfamily \$stm = \$pdo-\/$>$query(\textquotesingle{}S\+E\+L\+E\+CT name, population F\+R\+OM countries W\+H\+E\+RE id=1\textquotesingle{})}
+
+\mbox{\Hypertarget{connection__attributes_8php_a598ca4e71b15a1313ec95f0df1027ca5}\label{connection__attributes_8php_a598ca4e71b15a1313ec95f0df1027ca5}} 
+\index{connection\_attributes.php@{connection\_attributes.php}!\$user@{\$user}}
+\index{\$user@{\$user}!connection\_attributes.php@{connection\_attributes.php}}
+\doxysubsubsection{\texorpdfstring{\$user}{$user}}
+{\footnotesize\ttfamily \$user = \textquotesingle{}root\textquotesingle{}}
+

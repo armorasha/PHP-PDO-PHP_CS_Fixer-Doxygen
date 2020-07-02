@@ -1,0 +1,51 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysubsection{R\+\_\+\+C\+A\+U\+T\+I\+ON}\label{md__r_e_a_d_m_e_autotoc_md1}
+\begin{quote}
+DO N\+OT M\+A\+KE T\+H\+IS R\+E\+PO P\+U\+B\+L\+IC. C\+O\+N\+T\+A\+I\+NS M\+Y\+S\+QL S\+Y\+S\+T\+EM R\+O\+OT P\+A\+S\+S\+W\+O\+RD and references to my own docx summaries which is useless to others. \end{quote}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{R\+\_\+\+My\+S\+Q\+L 8.\+x\textquotesingle{}s \textquotesingle{}caching\+\_\+sha2\+\_\+password\textquotesingle{} authentication}\label{md__r_e_a_d_m_e_autotoc_md2}
+P\+HP 7.\+4 does not support My\+S\+QL 8.\+x\textquotesingle{}s {\ttfamily caching\+\_\+sha2\+\_\+password} user authentication method/plugin yet, db user authentication is required for P\+DO similar to mysqli. You need to change the access user\textquotesingle{}s (that will be used in this P\+DO exercises) auth method/plugin to {\ttfamily mysql\+\_\+native\+\_\+password} in My\+S\+QL. I used {\ttfamily root} user and changed its auth method.\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{R\+\_\+\+How to use this exercise}\label{md__r_e_a_d_m_e_autotoc_md3}
+Start with running {\ttfamily \mbox{\hyperlink{index_8php}{index.\+php}}} with X\+A\+M\+PP\textquotesingle{}s Apache, which contains links to all the exercises. Use create\+\_\+database.\+sql to create a database in My\+S\+QL Workbench for this exercise to connect to. Don\textquotesingle{}t use php\+My\+Admin.\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysection{P\+DO}\label{md__r_e_a_d_m_e_autotoc_md4}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{1. P\+DO}\label{md__r_e_a_d_m_e_autotoc_md5}
+Using P\+DO (P\+HP Data Object, a Data Abstraction layer) in P\+HP to connect to different databases like My\+S\+QL, S\+Q\+Lite and M\+S\+S\+QL with no code change in the actual P\+HP project itself. The code change will happen only in P\+DO layer. Without P\+DO, change in database (My\+S\+Q\+L-\/$>$M\+S\+S\+QL) will result in change of all S\+QL queries in the P\+HP project.\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxyparagraph{Keywords and Notes}\label{md__r_e_a_d_m_e_autotoc_md6}
+
+\begin{DoxyItemize}
+\item P\+DO -\/ P\+HP Data Object, a Data Abstraction layer. {\ttfamily \$pdo = new P\+DO(\$dsn, \$user, \$password);}
+\item D\+SN -\/ Data Source Name. D\+SN is the connection method to a database. {\ttfamily \$dsn = \textquotesingle{}mysql\+:host=localhost;dbname=php\+\_\+pdo\textquotesingle{};}
+\item D\+AL -\/ Data Abstraction Layer. There are many D\+A\+Ls\+: P\+HP\textquotesingle{}s P\+DO and also other third party D\+A\+Ls.
+\item Prepared statement / Parameterized queries are used in P\+DO D\+AL.
+\item fetch
+\begin{DoxyItemize}
+\item fetch in many ways including associative array object (main) but there are others.
+\item you can also override and fetch array, instead of object.
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{2. Parameterized S\+Q\+L queries}\label{md__r_e_a_d_m_e_autotoc_md7}
+Must use Parameterized S\+QL queries for P\+DO. See third paragraph to find out why. A parameterized query (aka prepared statement) is a means of pre-\/compiling a S\+QL statement so that all you need to supply are the \char`\"{}parameters\char`\"{} (like \char`\"{}variables\char`\"{}) that need to be inserted into the statement for it to be executed. It\textquotesingle{}s commonly used as a means of preventing S\+QL injection attacks. Prepared statements are so useful that they are the only feature that P\+DO will emulate for drivers that don\textquotesingle{}t support them. This ensures that an application will be able to use the same data access paradigm regardless of the capabilities of the database.\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxyparagraph{Keywords and Notes}\label{md__r_e_a_d_m_e_autotoc_md8}
+
+\begin{DoxyItemize}
+\item Prepared Statements can have
+\begin{DoxyItemize}
+\item positional params (0,1,2,..)
+\item named params (id, name, age,..)
+\end{DoxyItemize}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{3. Transactions}\label{md__r_e_a_d_m_e_autotoc_md9}
+A transaction is an atomic (wholesome) unit of database operations against the data in one or more databases. The results of all the S\+QL statements in a transaction can be either {\bfseries{all committed}} to the database or {\bfseries{all rolled back}}. For example, an order processing can have S\+QL statements for creating new customer and inserting new order for that customer. If inserting new order fails for any reason, then there will be a new customer in DB without any order, without using transactions. With using transactions, when inserting new order fails, the new customer account created will also be rolled back. Transactions will rollback even when sending queries to different D\+Bs.\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxyparagraph{Keywords and Notes}\label{md__r_e_a_d_m_e_autotoc_md10}
+
+\begin{DoxyEnumerate}
+\item begin transaction
+\item execute several queries in several databases
+\item commit, if all queries successful.
+\item rollback all queries, if any query failed.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{4. Get Metadata and Attributes}\label{md__r_e_a_d_m_e_autotoc_md11}
+Using P\+DO, You can also retrieve
+\begin{DoxyItemize}
+\item metadata of a query, like column count of result set. (Eg\+: \textquotesingle{}2\textquotesingle{} for country\+\_\+name and population columns)
+\item database connection attributes (Eg\+: Driver\+: mysql, Server version\+: 5.\+7.\+22-\/0ubuntu0.\+16.\+04.\+1, Autocommit mode\+: 1)
+\item columns metadata of a result (Eg\+: Table name\+: countries, Column name\+: id, Column length\+: 20, Column flags\+: not\+\_\+null primary\+\_\+key)
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysection{Linting \& Block Commenting like Java\+Doc for Code Documentation}\label{md__r_e_a_d_m_e_autotoc_md12}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxyparagraph{V\+S\+Code Extensions\+:}\label{md__r_e_a_d_m_e_autotoc_md13}
+
+\begin{DoxyItemize}
+\item {\bfseries{P\+H\+P-\/\+C\+S-\/\+Fixer}} for linting P\+HP code
+\item {\bfseries{P\+HP Doc\+Blocker}} for Block Commenting P\+HP similar to Java\+Doc for Java in Net\+Beans
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysubsection{Automatic Linting-\/on-\/save using P\+H\+P-\/\+C\+S-\/\+Fixer}\label{md__r_e_a_d_m_e_autotoc_md14}
+Use \href{https://medium.com/@armorasha/php-cs-fixer-how-to-install-vs-code-2020-windows-10-75b6d5ed03ce}{\texttt{ my Medium blog post}} for how to install and use P\+H\+P-\/\+C\+S-\/\+Fixer in VS Code. This linter {\itshape {\bfseries{lints code automatically}}} everytime on-\/save, so you need not lint the code manually.\hypertarget{md__r_e_a_d_m_e_autotoc_md15}{}\doxysubsection{Block Commenting like Java\+Doc for Code Documentation}\label{md__r_e_a_d_m_e_autotoc_md15}
+Use P\+HP Doc\+Blocker extension for auto-\/fill commenting as in \mbox{\hyperlink{1___block___commenting_8php}{1\+\_\+\+Block\+\_\+\+Commenting.\+php}} file in this repo. {\itshape {\bfseries{You cannot generate a H\+T\+ML Code Documentation file from the block comments within VS Code}}}. You need to use third party software like Doxygen to generate H\+T\+ML document, I used this \href{https://www.doxygen.nl/download.html}{\texttt{ G\+UI based Windows Doxygen tool}} to generate H\+T\+ML documentation for my code. 
