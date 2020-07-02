@@ -52,11 +52,11 @@ Using PDO, You can also retrieve
 
 # Linting, Block Commenting & Code HTML Documentation (like JavaDoc)
 
-### Tools used:
-#### VSCode Extensions: 
+## Tools used:
+### VSCode Extensions: 
 * **PHP-CS-Fixer** for linting PHP code
 * **PHP DocBlocker** for Block Commenting PHP similar to JavaDoc for Java in NetBeans
-#### Third Party Software: 
+### Third Party Software: 
 * **Doxygen GUI for Windows** for auto-generating HTML documents from the Block comments in PHP files
 
 ## 1. Automatic Linting-on-save using PHP-CS-Fixer
