@@ -12,4 +12,6 @@ echo '<b>PDO and Parameterized query exercises</b><br><br>';
 <a href="/transactions.php/">8. If all queries succeed, transactions commits all; else it rolls back all.</a><br>
 <a href="/column_count.php/">9. Retrieving metadata of a query, like column count of result set.</a><br>
 <a href="/connection_attributes.php/">10. Retrieving database connection attributes.</a><br>
-<a href="/column_metadata.php/">11. Retrieving column metadata of a result.</a><br>
+<a href="/column_metadata.php/">11. Retrieving column metadata of a result.</a><br><br>
+
+<a href="/1_Block_Commenting.php/">12. Automatic Block Commenting of a function by PHP DocBlocker VSCode extension.</a><br>
