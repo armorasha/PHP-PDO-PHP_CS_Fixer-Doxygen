@@ -84,7 +84,7 @@ echo addTwoNum(1, 2);
  ```
 
 ## 3. Code Documentation in HTML (like JavaDoc for Java)
-Used third party software like **Doxygen** to generate HTML document, I used this [GUI based Windows Doxygen tool](https://www.doxygen.nl/download.html) to generate HTML documentation for my code. ***You cannot generate a HTML Code Documentation file from the block comments within VS Code***.
+Used third party software like **Doxygen** to generate HTML document, I used this [GUI based Windows Doxygen tool](https://www.doxygen.nl/download.html) to generate HTML documentation for my code. **You cannot generate a HTML Code Documentation file from the block comments** ***within VS Code***. Doxygen is easy to use, use it.
 
 ### Doxygen
 See **Screenshots_private_folder** in this repo for more Doxygen run and results screenshots.
