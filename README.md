@@ -1,4 +1,4 @@
-# PHP PDO: Data Abstraction Layer in PHP + Linting + Code Documentation
+# PHP PDO: Data Abstraction Layer + Code Linting + Code Documentation
 
 ### R_CAUTION
 > DO NOT MAKE THIS REPO PUBLIC. CONTAINS MYSQL SYSTEM ROOT PASSWORD and references to my own docx summaries which is useless to others.
@@ -8,6 +8,8 @@ PHP 7.4 does not support MySQL 8.x's ```caching_sha2_password``` user authentica
 
 ### R_How to use this exercise
 Start with running ```index.php``` with XAMPP's Apache, which contains links to all the exercises. Use create_database.sql to create a database in MySQL Workbench for this exercise to connect to. Don't use phpMyAdmin. 
+
+# PDO
 
 ## 1. PDO 
 Using PDO (PHP Data Object, a Data Abstraction layer) in PHP to connect to different databases like MySQL, SQLite and MSSQL with no code change in the actual PHP project itself. The code change will happen only in PDO layer. Without PDO, change in database (MySQL->MSSQL) will result in change of all SQL queries in the PHP project.
@@ -49,7 +51,9 @@ Using PDO, You can also retrieve
 - columns metadata of a result (Eg: Table name: countries, Column name: id, Column length: 20, Column flags: not_null primary_key)
 
 # Linting & Block Commenting like JavaDoc for Code Documentation
-Using PHP-CS-Fixer for linting PHP code and using Block Commenting PHP in VS Code like JavaDoc in NetBeans
+VSCode Extensions: 
+* **PHP-CS-Fixer** for linting PHP code
+* **PHP DocBlocker** for Block Commenting PHP similar to JavaDoc for Java in NetBeans
 
 ## Automatic Linting-on-save using PHP-CS-Fixer
 Use [my Medium blog post](https://medium.com/@armorasha/php-cs-fixer-how-to-install-vs-code-2020-windows-10-75b6d5ed03ce) for how to install and use PHP-CS-Fixer in VS Code. This linter lints the code automatically everytime on-save, so you need not lint the code manually.
