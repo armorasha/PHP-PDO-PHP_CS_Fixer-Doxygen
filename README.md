@@ -51,15 +51,20 @@ Using PDO, You can also retrieve
 - columns metadata of a result (Eg: Table name: countries, Column name: id, Column length: 20, Column flags: not_null primary_key)
 
 # Linting & Block Commenting like JavaDoc for Code Documentation
+
+### Tools used:
 #### VSCode Extensions: 
 * **PHP-CS-Fixer** for linting PHP code
 * **PHP DocBlocker** for Block Commenting PHP similar to JavaDoc for Java in NetBeans
+#### Third Party Software: 
+* **Doxygen GUI for Windows** for auto-generating HTML documents from the Block comments in PHP files
 
 ## Automatic Linting-on-save using PHP-CS-Fixer
 Use [my Medium blog post](https://medium.com/@armorasha/php-cs-fixer-how-to-install-vs-code-2020-windows-10-75b6d5ed03ce) for how to install and use PHP-CS-Fixer in VS Code. This linter ***lints code automatically*** everytime on-save, so you need not lint the code manually.
 
-## Block Commenting like JavaDoc for Code Documentation
-Use PHP DocBlocker extension for auto-fill commenting as in 1_Block_Commenting.php file in this repo. ***You cannot generate a HTML Code Documentation file from the block comments within VS Code***. You need to use third party software like Doxygen to generate HTML document, I used this [GUI based Windows Doxygen tool](https://www.doxygen.nl/download.html) to generate HTML documentation for my code.
+## Block Commenting and Code Documentation (like JavaDoc for Java)
+1. **Block Commenting:** Used **PHP DocBlocker extension** for auto-fill commenting as in 1_Block_Commenting.php file in this repo. 
+2. **Code Documentation:** Used third party software like **Doxygen** to generate HTML document, I used this [GUI based Windows Doxygen tool](https://www.doxygen.nl/download.html) to generate HTML documentation for my code. ***You cannot generate a HTML Code Documentation file from the block comments within VS Code***.
 
 ### Screenshots
 See **Screenshots_private_folder** in this repo for Doxygen run and results screenshots.
