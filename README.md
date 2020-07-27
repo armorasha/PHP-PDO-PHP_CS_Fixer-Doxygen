@@ -1,15 +1,12 @@
 # PHP: PDO Data Abstraction Layer + Code Linting + Code Documentation
 
-### R_CAUTION
-> DO NOT MAKE THIS REPO PUBLIC. CONTAINS MYSQL SYSTEM ROOT PASSWORD and references to my own docx summaries which is useless to others.
-
 ### R_MySQL 8.x's 'caching_sha2_password' authentication
 PHP 7.4 does not support MySQL 8.x's ```caching_sha2_password``` user authentication method/plugin yet, db user authentication is required for PDO similar to mysqli. You need to change the access user's (that will be used in this PDO exercises) auth method/plugin to ```mysql_native_password``` in MySQL. I used ```root``` user and changed its auth method.
 
 ### R_How to use this exercise
 Start with running ```index.php``` with XAMPP's Apache, which contains links to all the exercises. Use create_database.sql to create a database in MySQL Workbench for this exercise to connect to. Don't use phpMyAdmin. 
 
-# PDO
+# A) PDO
 
 ## 1. PDO 
 Using PDO (PHP Data Object, a Data Abstraction layer) in PHP to connect to different databases like MySQL, SQLite and MSSQL with no code change in the actual PHP project itself. The code change will happen only in PDO layer. Without PDO, change in database (MySQL->MSSQL) will result in change of all SQL queries in the PHP project.
@@ -50,7 +47,7 @@ Using PDO, You can also retrieve
 - database connection attributes (Eg: Driver: mysql, Server version: 5.7.22-0ubuntu0.16.04.1, Autocommit mode: 1)
 - columns metadata of a result (Eg: Table name: countries, Column name: id, Column length: 20, Column flags: not_null primary_key)
 
-# Linting, Block Commenting & Code HTML Documentation (like JavaDoc)
+# B) Linting, Block Commenting & Code HTML Documentation (like JavaDoc)
 
 ## Tools used:
 ### VSCode Extensions: 
